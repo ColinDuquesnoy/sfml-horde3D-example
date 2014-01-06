@@ -172,6 +172,12 @@ int main( int argc, char** argv )
     // Initialize application and engine
     app = new Application( std::string(argv[0]));
 
+    // Fonts must be loaded before creating the sf::RenderWindow and
+    // initializing Horde3D to avoid crashes with old nvidia gpu
+    // on windows xp (GeForce 9400 GT) .
+    sf::Font font;
+    font.loadFromFile("Content/fonts/arial.ttf");
+
     // Initialize a SFML window
     pSfmlWindow = NULL;
     int width = appWidth, height = appHeight;
@@ -179,12 +185,10 @@ int main( int argc, char** argv )
 
     // SFML text used to draw benchmark informations
     sf::Text text;
-    sf::Font font;
-    font.loadFromFile("Content/fonts/arial.ttf");
     text.setFont(font);
     text.setCharacterSize(30);
     text.setColor(sf::Color::Magenta);
-    text.setString("SFML TEXT on top of a Horder3D scene");
+    text.setString("FPS: ");
     text.setPosition(10, 10);
 
     // SFML logo
