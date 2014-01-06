@@ -18,9 +18,8 @@ There are a couple of reason for using a combination of Horde3D and SFML:
 Compilation
 =================
 
-You first need compile and install [Horde3D](http://horde3d.org/) and this [SFML fork](https://github.com/ColinDuquesnoy/SFML)
-SFML (this fork fix a bug with texture 
-units. If you don't use this fork, texture won't show up).
+You first need compile and install [Horde3D](http://horde3d.org/) and this [SFML fork](https://github.com/ColinDuquesnoy/SFML). You need this fork to fix a bug with texture 
+units. If you don't use this fork, texture won't show up ([see](screenshots/NotWorking.png)).
 
 
 Then you can run the usual cmake/make commands:
