@@ -18,7 +18,11 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
-#include "horde3d/Horde3DUtils.h"
+#ifdef SFML_SYSTEM_LINUX
+    #include "horde3d/Horde3DUtils.h"
+#else
+    #include "Horde3DUtils.h"
+#endif
 
 
 void CrowdSim::chooseDestination( Particle &p )
