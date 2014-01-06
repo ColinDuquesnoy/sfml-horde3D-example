@@ -7,7 +7,7 @@ sfml logo).
 
 [![Screenshot](screenshots/Working.png)](screenshots/Working.png)
 
-What would you want to do that?
+Why?
 ====================================
 
 There are a couple of reason for using a combination of Horde3D and SFML:
@@ -18,7 +18,7 @@ There are a couple of reason for using a combination of Horde3D and SFML:
 Compilation
 =================
 
-You first need compile and install [Horde3D](http://horde3d.org/) and this [SFML fork](https://github.com/ColinDuquesnoy/SFML). You need this fork to fix a bug with texture 
+You first need to compile and install [Horde3D](http://horde3d.org/) and this [SFML fork](https://github.com/ColinDuquesnoy/SFML). You need this fork to fix a bug with texture 
 units. If you don't use this fork, texture won't show up ([see](screenshots/NotWorking.png)).
 
 
