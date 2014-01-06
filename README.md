@@ -1,4 +1,4 @@
-SFML_Horde3D_Example
-====================
+SFML + Horde3D Example
+===============================
 
-Example of integrating SFML with Horde3D
+Show how to integrate SFML with Horde3D.
